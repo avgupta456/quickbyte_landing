@@ -1,33 +1,55 @@
 import React from 'react';
 
-import Background from './Background.js';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-function App() {
+import Landing from './Landing';
+import Privacy from './Privacy';
+import Terms from './Terms';
+
+const Footer = () => {
   return (
-    <div>
-      <Background />
-      <div className="absolute w-screen h-screen">
-        <div className="flex justify-around">
-          <div className="mt-32 content-center">
-            <h2 className="text-6xl lg:text-8xl font-bold text-red-500 lg:text-white lg:hover:text-red-50 text-center">
-              QuickBites
-            </h2>
-            <h4 className="text-2xl lg:text-4xl font-bold text-red-500 lg:text-white lg:hover:text-red-50 mt-8 text-center">
-              All-in-One Food-Delivery Search
-            </h4>
-            <div className="flex mt-8 justify-center space-x-4">
-              <img src="apple.png" alt="" className="h-20" />
-              <img src="google.png" alt="" className="h-20" />
-            </div>
-          </div>
-          <div className="flex justify-center right mt-24">
-            <img src="iphone.png" alt="" className="w-96" />
-            <img src="iphone.png" alt="" className="w-96" />
-          </div>
-        </div>
+    <div className="absolute h-screen w-screen overflow-x-hidden">
+      <div className="absolute inset-x-0 bottom-2 text-center text-gray-500 text-lg">
+        © 2021.{' '}
+        <a
+          href="https://www.abhijitgupta.io"
+          className="hover:text-red-500"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Abhijit Gupta.
+        </a>{' '}
+        <Link to="/privacy" className="hover:text-red-500">
+          Privacy Policy
+        </Link>
+        .{' '}
+        <Link to="/terms" className="hover:text-red-500">
+          Terms of Service
+        </Link>
       </div>
     </div>
   );
-}
+};
+
+const App = () => {
+  return (
+    <Router>
+      <div className="absolute w-screen h-screen">
+        <Switch>
+          <Route path="/privacy">
+            <Privacy />
+          </Route>
+          <Route path="/terms">
+            <Terms />
+          </Route>
+          <Route path="/">
+            <Landing />
+          </Route>
+        </Switch>
+      </div>
+      <Footer />
+    </Router>
+  );
+};
 
 export default App;
