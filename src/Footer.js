@@ -9,17 +9,23 @@ const Footer = () => {
         © 2021. By{' '}
         <a
           href="https://www.abhijitgupta.io"
-          className="hover:text-red-500 underline"
+          className="transition ease-in duration-500 hover:text-red-500 underline"
           target="_blank"
           rel="noreferrer"
         >
           Abhijit Gupta.
         </a>{' '}
-        <Link to="/privacy" className="hover:text-red-500 underline">
+        <Link
+          to="/privacy"
+          className="transition ease-in duration-500 hover:text-red-500 underline"
+        >
           Privacy Policy
         </Link>
         .{' '}
-        <Link to="/terms" className="hover:text-red-500 underline">
+        <Link
+          to="/terms"
+          className="transition ease-in duration-500 hover:text-red-500 underline"
+        >
           Terms of Service
         </Link>
       </div>
