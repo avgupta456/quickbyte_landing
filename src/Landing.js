@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Background from './Background';
+import Footer from './Footer';
 
 const Landing = () => {
   return (
@@ -35,6 +36,7 @@ const Landing = () => {
           <img src="iphones.png" alt="" className="right mt-16 w-1/2" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

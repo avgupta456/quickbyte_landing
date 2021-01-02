@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Landing from './Landing';
 import Privacy from './Privacy';
 import Terms from './Terms';
-import Footer from './Footer';
 
 const App = () => {
   return (
@@ -23,7 +22,6 @@ const App = () => {
           </Route>
         </Switch>
       </div>
-      <Footer />
     </Router>
   );
 };

@@ -3,7 +3,7 @@ import React from 'react';
 const Background = () => {
   return (
     <div>
-      <div className="hidden lg:block absolute h-screen w-screen overflow-x-hidden">
+      <div className="absolute h-screen w-screen overflow-x-hidden">
         <div className="relative h-full w-full bg-gray-50">
           <svg
             className="block absolute right-0 inset-y-0 h-full w-full text-red-500"
