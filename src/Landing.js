@@ -16,14 +16,23 @@ const Landing = () => {
               All-in-One Food-Delivery Search
             </h4>
             <div className="flex mt-8 justify-center space-x-4">
-              <img src="apple.png" alt="" className="h-20" />
-              <img src="google.png" alt="" className="h-20" />
+              <a
+                href="https://www.apple.com/app-store/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="apple.png" alt="" className="h-20" />
+              </a>
+              <a
+                href="https://play.google.com/store"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="google.png" alt="" className="h-20" />
+              </a>
             </div>
           </div>
-          <div className="flex justify-center right mt-16">
-            <img src="iphone.png" alt="" className="w-96" />
-            <img src="iphone.png" alt="" className="w-96" />
-          </div>
+          <img src="iphones.png" alt="" className="right mt-16 w-1/2" />
         </div>
       </div>
     </div>
