@@ -9,7 +9,7 @@ const Footer = () => {
         © 2021. By{' '}
         <a
           href="https://www.abhijitgupta.io"
-          className="transition ease-in duration-500 hover:text-red-500 underline"
+          className="transition ease-in duration-100 hover:text-red-500 underline"
           target="_blank"
           rel="noreferrer"
         >
@@ -17,16 +17,16 @@ const Footer = () => {
         </a>{' '}
         <Link
           to="/privacy"
-          className="transition ease-in duration-500 hover:text-red-500 underline"
+          className="transition ease-in duration-100 hover:text-red-500 underline"
         >
           Privacy Policy
         </Link>
         .{' '}
         <Link
           to="/terms"
-          className="transition ease-in duration-500 hover:text-red-500 underline"
+          className="transition ease-in duration-100 hover:text-red-500 underline"
         >
-          Terms of Service
+          Terms and Conditions
         </Link>
       </div>
     </div>
