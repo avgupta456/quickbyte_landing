@@ -24,7 +24,7 @@ const Landing = () => {
               <img
                 src="apple.png"
                 alt=""
-                className="mx-4 sm:mx-0 max-h-16 sm:max-h-20"
+                className="mx-4 sm:mx-0 max-h-16 2xl:max-h-20"
               />
             </button>
             <button
@@ -35,7 +35,7 @@ const Landing = () => {
               <img
                 src="google.png"
                 alt=""
-                className="mx-4 sm:mx-0 mt-4 sm:mt-0 max-h-16 sm:max-h-20"
+                className="mx-4 sm:mx-0 mt-4 sm:mt-0 max-h-16 2xl:max-h-20"
               />
             </button>
           </div>
