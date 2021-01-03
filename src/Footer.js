@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className="-mt-10 h-8 w-screen">
-      <div className="absolute inset-x-8 text-center text-white text-sm sm:text-lg">
+    <div className="-mt-6 h-6 w-screen">
+      <div className="absolute inset-x-8 text-center text-white text-sm sm:text-md">
         © 2021. By{' '}
         <a
           href="https://www.abhijitgupta.io"
