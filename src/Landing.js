@@ -16,7 +16,7 @@ const Landing = () => {
             All-in-One Food-Delivery Search
           </h4>
           <div className="mt-8 flex flex-wrap justify-center sm:space-x-8">
-            <button
+            <a
               href="https://www.apple.com/app-store/"
               target="_blank"
               rel="noreferrer"
@@ -26,8 +26,8 @@ const Landing = () => {
                 alt=""
                 className="mx-4 sm:mx-0 max-h-16 2xl:max-h-20"
               />
-            </button>
-            <button
+            </a>
+            <a
               href="https://play.google.com/store"
               target="_blank"
               rel="noreferrer"
@@ -37,7 +37,7 @@ const Landing = () => {
                 alt=""
                 className="mx-4 sm:mx-0 mt-4 sm:mt-0 max-h-16 2xl:max-h-20"
               />
-            </button>
+            </a>
           </div>
         </div>
         <div className="w-screen mt-8 sm:mt-16 xl:mt-0 mb-10 xl:mb-0 xl:h-screen xl:w-1/2 xl:flex xl:flex-col xl:justify-center px-8">
