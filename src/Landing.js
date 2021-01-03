@@ -44,7 +44,7 @@ const Landing = () => {
           <img
             src="iphones.png"
             alt=""
-            className="w-full max-w-screen-sm 3xl:max-w-screen-md mx-auto"
+            className="w-full max-w-lg 3xl:max-w-xl mx-auto"
           />
         </div>
       </div>
