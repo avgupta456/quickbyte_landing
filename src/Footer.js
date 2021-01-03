@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className="-mt-6 h-6 w-screen">
-      <div className="absolute inset-x-8 text-center text-white text-sm sm:text-md">
-        © 2021. By{' '}
+      <div className="absolute inset-x-4 text-center text-white text-sm sm:text-md">
+        By{' '}
         <a
           href="https://www.abhijitgupta.io"
           className="transition ease-in duration-100 hover:text-blue-300 underline"
@@ -26,7 +26,7 @@ const Footer = () => {
           to="/terms"
           className="transition ease-in duration-100 hover:text-blue-300 underline"
         >
-          Terms and Conditions
+          Terms of Use
         </Link>
       </div>
     </div>
