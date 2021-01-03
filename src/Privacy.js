@@ -2,7 +2,7 @@ import React from 'react';
 
 const Privacy = () => {
   return (
-    <div className="w-3/4 mx-auto mt-4 px-4 py-4 rounded shadow">
+    <div className="w-screen sm:w-3/4 mx-auto mt-4 px-4 py-4 rounded shadow">
       <h1 className="text-3xl font-bold">PRIVACY NOTICE</h1>
       <h2 className="text-xl">Last Updated: Jan 01, 2021</h2>
       <br />
@@ -289,28 +289,28 @@ const Privacy = () => {
         If you are a resident in the European Economic Area and you believe we
         are unlawfully processing your personal information, you also have the
         right to complain to your local data protection supervisory authority.
-        You can find their contact details here:{' '}
+        You can find their contact details{' '}
         <a
           href="http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm"
           target="_blank"
           rel="noreferrer"
           className="text-blue-500 underline"
         >
-          http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm
+          here
         </a>
         .
       </p>
       <br />
       <p>
         If you are a resident in Switzerland, the contact detail for the data
-        protection authorities are available here:{' '}
+        protection authorities are available{' '}
         <a
           href="https://www.edoeb.admin.ch/edoeb/en/home.html"
           target="_blank"
           rel="noreferrer"
           className="text-blue-500 underline"
         >
-          https://www.edoeb.admin.ch/edoeb/en/home.html
+          here
         </a>
         .
       </p>
