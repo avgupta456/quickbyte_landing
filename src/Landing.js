@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Background from './Background';
+import Particles from 'react-particles-js';
+
 import Footer from './Footer';
 
 const Landing = () => {
@@ -35,6 +36,18 @@ const Landing = () => {
           </div>
           <img src="iphones.png" alt="" className="right mt-16 w-1/2" />
         </div>
+      <div
+        className="fixed top-0 bottom-0 left-0 right-0"
+        style={{ backgroundColor: '#DC3030', zIndex: -10 }}
+      >
+        <Particles
+          params={{
+            particles: {
+              number: { value: 50 },
+              size: { value: 3 },
+            },
+          }}
+        />
       </div>
       <Footer />
     </div>
