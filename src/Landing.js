@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { useTimeout } from 'react-use';
 import Grow from '@material-ui/core/Grow';
 import Particles from 'react-particles-js';
 
@@ -8,7 +7,7 @@ import Footer from './Footer';
 
 const Landing = () => {
   // eslint-disable-next-line no-unused-vars
-  const [isReady, cancel] = useTimeout(500);
+  const [isReady, setIsReady] = useState(false);
 
   return (
     <div>
@@ -47,14 +46,15 @@ const Landing = () => {
         </div>
         <div className="w-screen mt-8 sm:mt-16 xl:mt-0 mb-10 xl:mb-0 xl:h-screen xl:w-1/2 xl:flex xl:flex-col xl:justify-center px-8">
           <Grow
-            in={isReady()}
+            in={isReady}
             style={{ transformOrigin: 'center' }}
-            {...(isReady() ? { timeout: 2000 } : {})}
+            {...(isReady ? { timeout: 2000 } : {})}
           >
             <img
               src="iphones.png"
               alt=""
               className="w-full max-w-lg 3xl:max-w-xl mx-auto"
+              onLoad={() => setIsReady(true)}
             />
           </Grow>
         </div>
