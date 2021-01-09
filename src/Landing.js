@@ -17,7 +17,7 @@ const Landing = () => {
             QuickBites
           </h2>
           <h4 className="text-lg sm:text-3xl 3xl:text-4xl font-bold text-center text-white mt-8">
-            All-in-One Food-Delivery Search
+            All-in-One Food Delivery Search
           </h4>
           <div className="mt-8 flex flex-wrap justify-center sm:space-x-8">
             <a
