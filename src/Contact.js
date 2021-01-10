@@ -4,9 +4,9 @@ import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
-const SERVICE_ID = process.env.SERVICE_ID;
-const TEMPLATE_ID = process.env.TEMPLATE_ID;
-const USER_ID = process.env.USER_ID;
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
 
 // Email validation
 const emailRegex = RegExp(
@@ -111,14 +111,16 @@ class Contact extends React.Component {
       // Handle form validation success
       const { name, email, subject, message } = this.state;
 
-      emailjs.send(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        { name, email, subject, message },
-        USER_ID,
-      );
+      emailjs
+        .send(
+          SERVICE_ID,
+          TEMPLATE_ID,
+          { name, email, subject, message },
+          USER_ID,
+        )
+        .then(this.toastifySuccess)
+        .catch(this.toastifyFail);
 
-      this.toastifySuccess();
       this.resetForm();
     } else {
       this.toastifyFail();
