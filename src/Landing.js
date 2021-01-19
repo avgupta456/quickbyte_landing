@@ -35,7 +35,7 @@ const Landing = () => {
               />
             </a>
             <a
-              href="https://play.google.com/store"
+              href="https://play.google.com/store/apps/details?id=app.quickbites"
               target="_blank"
               rel="noreferrer"
             >
