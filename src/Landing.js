@@ -24,7 +24,7 @@ const Landing = () => {
           </h4>
           <div className="mt-8 flex flex-wrap justify-center sm:space-x-8">
             <a
-              href="https://www.apple.com/app-store/"
+              href="https://apps.apple.com/us/app/quickbites-food-delivery/id1548207751"
               target="_blank"
               rel="noreferrer"
             >
